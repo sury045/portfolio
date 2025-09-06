@@ -1,0 +1,139 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surya's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Surya</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Surya, a passionate developer based in Chennai. I love building web experiences that are clean, responsive, and user-friendly.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div><img src="images/skill-html.png" alt="HTML" /><p>HTML</p></div>
+      <div><img src="images/skill-css.png" alt="CSS" /><p>CSS</p></div>
+      <div><img src="images/skill-js.png" alt="JavaScript" /><p>JavaScript</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/project-placeholder.png" alt="Project 1" />
+        <h3>Project One</h3>
+        <p>Brief description of project one.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/project-placeholder.png" alt="Project 2" />
+        <h3>Project Two</h3>
+        <p>Brief description of project two.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:suryadev@example.com">suryadev@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/suryadev" target="_blank">github.com/suryadev</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/suryadev" target="_blank">linkedin.com/in/suryadev</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Surya. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+style.css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.skills-grid, .projects-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-grid div, .project-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+}
+
+.skills-grid img, .project-card img {
+  width: 100px;
+  height: auto;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .skills-grid, .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
